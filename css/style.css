@@ -1,0 +1,227 @@
+/* -------------------- GENERAL -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+    background-color: #0D1B2A;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+#menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* -------------------- ABOUT SECTION -------------------- */
+#about {
+    position: relative;
+    border-radius: 30px;
+    padding: 80px 20px;
+    margin: 40px auto;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(0, 50, 100, 0.2);
+}
+
+#about-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.Profile {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 20px 0;
+}
+
+/* -------------------- PROJECTS -------------------- */
+.container {
+    background-color: rgba(0, 50, 100, 0.2);
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 450px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    background-color: rgba(0, 50, 100, 0.2);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.content {
+    padding: 16px;
+}
+
+.content h3 {
+    font-size: 28px;
+}
+
+/* -------------------- CONTACT -------------------- */
+.form-container {
+    background-color: rgba(0, 50, 100, 0.2);
+    border-radius: 25px;
+    padding: 30px;
+    width: 420px;
+    margin: 40px auto;
+}
+
+.contact-form {
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding:12px;
+    width: 350px;
+}
+
+.contact-form button {
+    padding: 12px;
+    width: 350px;
+}
+
+.contact-form button:hover {
+    background-color: #818185;
+    transition: 0.3s;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    background-color: #0D1B2A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .Profile {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nav-links {
+        flex-direction: row;
+        width: auto;
+        display: flex !important;
+        margin-top: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+
+    .logo a {
+        font-size: 30px;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+    }
+}

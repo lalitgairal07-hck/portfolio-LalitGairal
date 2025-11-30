@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="#">LalitGairal</a></div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#container">Projects</a></li>
+                    <li><a href="#form">Contact</a></li>
+                </ul>
+                <button id="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section with Video -->
+        <section id="about">
+            <video autoplay muted loop id="about-video">
+                <source src="videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="about-content">
+                <h1>About Me</h1>
+                <img src="Images/men.png" alt="Profile Photo" class="Profile">
+                <p class="intro">
+                    I am a dedicated cybersecurity student currently pursuing my BSc in Cybersecurity.
+                    I am passionate about understanding how systems work, how they fail, and how to secure them.
+                    Along with my academic studies, I actively explore ethical hacking, networking, Python programming,
+                    and server management to build strong, real-world technical skills. I enjoy working on hands-on
+                    projects—from building simple applications like a Tic-Tac-Toe game and a weather app to managing
+                    virtualized servers on AWS. My long-term goal is to grow into a skilled cybersecurity professional
+                    who can solve complex problems and contribute to secure, modern digital systems.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="container" id="container">
+
+            <div class="card">
+                <img src="Images/game.png" alt="Tic-Tac-Toe">
+                <div class="content">
+                    <h3>Tic-Tac-Toe</h3>
+                    <p>
+                        The Tic-Tac-Toe game is a Python-based project that allows two players to play the classic
+                        3×3 grid game. It is built using basic programming concepts such as functions, loops,
+                        conditionals, and lists. The program checks for valid moves, updates the board after each
+                        turn, and determines whether a player has won or if the game ends in a draw. This project
+                        demonstrates fundamental problem-solving skills and provides a solid understanding of how
+                        game logic works in Python.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Images/app.png" alt="Weather App">
+                <div class="content">
+                    <h3>Weather App</h3>
+                    <p>
+                        The Weather App is a web-based application that allows users to check real-time weather
+                        conditions for any city. It uses HTML, CSS, and JavaScript on the frontend to provide a clean
+                        and interactive interface, while MySQL is used on the backend to store search history or user
+                        data. The app fetches live weather information from an external API and displays details such as
+                        temperature, humidity, and weather conditions in an easy-to-understand format.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Images/website.png" alt="Portfolio Website">
+                <div class="content">
+                    <h3>Basic Portfolio Website</h3>
+                    <p>
+                        The Basic Portfolio Website is a simple web project created using HTML, CSS, and JavaScript to
+                        showcase personal information, projects, and skills. It includes sections like About Me,
+                        Projects, and Contact to give visitors a clear overview of who you are and what you can do. The
+                        website focuses on clean design, easy navigation, and responsive layout, making it suitable for
+                        beginners and a great foundation for building more advanced personal websites.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="form-container" id="form">
+            <h1>Contact Me</h1>
+
+            <form class="contact-form" id="contact-form">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+                <div id="form-message" style="margin-top:10px; font-weight:bold;"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Lalit Gairal | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
